@@ -41,11 +41,11 @@
     \quad c) 负责海外多机房VPN 系统的配置和管理。 \\
     \quad d) 负责自动化运维，以及运维系统的优化。\\
     \quad 项目经验： \\
-    \quad a) 使用 go 语言实现一个小型的登录管理系统，实现登录主机鉴权管理。\\
-    \quad b) 在多个机房部署 master/slave/cache 模式的dns 集群，实现dns 高可用以及自定义域名与公共域名的智能解析，并通过 ansible 实现自动化部署。\\
-    \quad c) 使用 Flask 开发 DNS 管理系统，统一管理多各机房的内部 DNS 域名。\\
-    \quad d) 设计内部系统的高可用架构，实现近百个服务的跨区域双机房的高可用。\\
-    \quad e) 通过 quagga 与 keepalived 实现高可用的海外互联 vpn 网络。
+%    \quad a) 使用 go 语言实现一个小型的登录管理系统，实现登录主机鉴权管理。\\
+    \quad a) 在多个机房部署 master/slave/cache 模式的dns 集群，实现dns 高可用以及自定义域名与公共域名的智能解析，并通过 ansible 实现自动化部署。\\
+    \quad b) 使用 Flask 开发 DNS 管理系统，统一管理多各机房的内部 DNS 域名。\\
+    \quad c) 设计内部系统的高可用架构，实现近内部服务的跨区域双机房的高可用。\\
+    \quad d) 通过 quagga 与 keepalived 实现高可用的海外互联 vpn 网络。
 }
 
 \entry{2em}{Xp{8em}}{
@@ -58,12 +58,13 @@
     \quad b) 负责相关服务的部署、监控、测试、上线全套流程的管控，并持续优化服务的可用性。\\ 
     \quad c) 负责所有入口 nginx 的配置和管理，优化 nginx 的部署和配置文件管理。 \\
     \quad d) 负责所有 mysql 、mongodb 的部署和备份，制定完善的部署策略。\\ 
-    \quad e) 部署并管理 heartbeat、lvs 、haproxy 、bind9、dnsmasq 等。 \\
+    \quad e) 部署并管理 heartbeat、bind9、dnsmasq 等公共组建。 \\
  %    \quad a) 重新制定盘坏盘检查机制，使存储系统坏盘能在五分钟内报警，成功率100\%，避免了储系统因磁盘损坏而导致丢失数据的风险，提升服务质量，受上级好评。\\
     \quad 项目经验： \\
     \quad a) 调优产品线关联服务，成功使得存储系统 64k 数据下载响应时间从 350ms 降低到 200ms ，并保持稳定，极大的提升服务质量。\\
     \quad b) 统筹华南双活机房的存储系统部署、监控、测试、上线，并完成合各方面的对接，使华南机房交付使用。 \\
-    \quad c) 制定并落实使用"零信"代替 slack 作为智能告警平台的具体方案，完成prometheus 对接零信的中间件。为简化promethues 告警规则的生成与管理，使用 python 定制 prometheus 规则自动生成工具，使得添加、删除、修改、管理大量的告警规则变得简单可靠。\\
+%    \quad c) 制定并落实使用"零信"代替 slack 作为智能告警平台的具体方案，完成prometheus 对接零信的中间件。为简化promethues 告警规则的生成与管理，使用 python 定制 prometheus 规则自动生成工具，使得添加、删除、修改、管理大量的告警规则变得简单可靠。\\
+    \quad c) 探索 prometheus 在业务运维中的使用场景，根据实际需求开发中间件，并形成一套最佳实践，将业务场景的告警缩短至 90 秒以内。\\
     \quad d) 对接 dnspod api ，使用 python 完成一套命令行 dns 切换工具，提升大入口流量管理效率。 \\
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -129,7 +130,8 @@
     熟悉 & 系统安全（iptables，TCP Wrapper） \\
     熟悉 & 自动化部署（Cobbler，ansible，puppet，saltstack）\\
     熟悉 & 监控系统 （zabbix，prometheus）\\
-    了解 & NAS/SAN/iSCSI，OpenSSL，DRBD，Memcached，varnish，MogileFS，系统调优 \\   
+    熟悉 & Web 框架 （Flask）\\
+%    了解 & NAS/SAN/iSCSI，OpenSSL，DRBD，Memcached，varnish，MogileFS，系统调优 \\   
 }
 %\entry{2em}{Xp{8em}}{
 %    \textbf{Linux-嵌入式方向} \\
@@ -143,7 +145,8 @@
     \heiti{编程} \\
 }
 \entry{4em}{lX}{
-    Shell、Python、Flask、Go、Lua、openresty、C、perl6、Vim、 \LaTeX  \\
+%    Shell、Python、Flask、Go、Lua、openresty、C、perl6、Vim、 \LaTeX  \\
+    Shell、Python、Go  \\
 }
 \entry{2em}{Xp{8em}}{
     \heiti{英语} \\
@@ -186,7 +189,7 @@
     思维活跃，思考独立，追求极致； \\
     较强的抗压能力与决策力，压力下能及时调整状态前进；\\
     热爱 Linux 运维行业，对 Linux 运维有着自己的积累和看法;\\
-    狂热的linux爱好者，热爱开源。\\
+    Linux爱好者，热爱开源。\\
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
